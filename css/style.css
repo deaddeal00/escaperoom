@@ -7277,7 +7277,7 @@ body {
   background: url(../images/bg_4.jpg) no-repeat fixed;
   background-size: cover; }
   body.menu-show {
-    overflow: hidden;
+    overflow:;
     position: fixed;
     height: 100%;
     width: 100%; }
@@ -8869,7 +8869,7 @@ textarea.form-control {
         margin-bottom: 5px; } }
 
 .block-20 {
-  overflow: hidden;
+  
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -8879,7 +8879,7 @@ textarea.form-control {
   height: 270px; }
 
 .blog-entry {
-  overflow: hidden; }
+  }
   @media (min-width: 768px) {
     .blog-entry {
       margin-bottom: 30px; } }
