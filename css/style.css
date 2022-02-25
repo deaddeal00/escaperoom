@@ -4347,12 +4347,11 @@ button.close {
    }
 
 .modal {
-  position: fixed;
+  position: ;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1050;
   display: none;
   
   outline: 0; }
@@ -4411,12 +4410,11 @@ button.close {
   outline: 0; }
 
 .modal-backdrop {
-  position: fixed;
+  
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1040;
   background-color: #000; }
   .modal-backdrop.fade {
     opacity: 0; }
@@ -4491,7 +4489,6 @@ button.close {
 
 .tooltip {
   position: absolute;
-  z-index: 1070;
   display: block;
   margin: 0;
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -4576,7 +4573,6 @@ button.close {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1060;
   display: block;
   max-width: 276px;
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -4870,7 +4866,6 @@ button.close {
   right: 0;
   bottom: 10px;
   left: 0;
-  z-index: 15;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4916,7 +4911,6 @@ button.close {
   right: 15%;
   bottom: 20px;
   left: 15%;
-  z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
@@ -7564,14 +7558,14 @@ h1, h2, h3, h4, h5,
   .owl-carousel.home-slider {
     position: relativez;
     height: 750px;
-    z-index: 0; }
+     }
     .owl-carousel.home-slider .slider-item {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
       height: 750px;
       position: relative;
-      z-index: 0; }
+      }
       @media (max-width: 1199.98px) {
         .owl-carousel.home-slider .slider-item {
           background-position: center center !important; } }
@@ -7689,7 +7683,7 @@ h1, h2, h3, h4, h5,
 .owl-custom-nav {
   float: right;
   position: relative;
-  z-index: 10; }
+  }
   .owl-custom-nav .owl-custom-prev,
   .owl-custom-nav .owl-custom-next {
     padding: 10px;
