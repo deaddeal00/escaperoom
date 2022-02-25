@@ -7556,10 +7556,12 @@ h1, h2, h3, h4, h5,
   .owl-carousel:hover .owl-nav .owl-next {
     right: -25px; }
   .owl-carousel.home-slider {
+    -webkit-overflow-scrolling: touch;
     position: relativez;
     height: 750px;
      }
     .owl-carousel.home-slider .slider-item {
+      -webkit-overflow-scrolling: touch;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
@@ -7640,6 +7642,7 @@ h1, h2, h3, h4, h5,
     .owl-carousel.home-slider:hover .owl-nav .owl-next {
       right: 20px; }
     .owl-carousel.home-slider .owl-dots {
+      -webkit-overflow-scrolling: touch;
       position: absolute;
       left: 0;
       right: 0;
