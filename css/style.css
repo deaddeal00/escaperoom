@@ -7762,7 +7762,7 @@ h1, h2, h3, h4, h5,
 
 @media (min-width: 992px) {
   .ftco-intro {
-    margin-top: -130px; } }
+    margin-top: -175px; } }
 
 .ftco-intro .container-wrap {
   z-index: 2 !important;
@@ -9281,3 +9281,8 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+.subheading{
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+  color: #c49b63;
+}
