@@ -178,7 +178,7 @@ img {
   border-style: none; }
 
 svg:not(:root) {
-  overflow: hidden; }
+  }
 
 table {
   border-collapse: collapse; }
@@ -2477,7 +2477,7 @@ input[type="button"].btn-block {
 .collapsing {
   position: relative;
   height: 0;
-  overflow: hidden;
+  
   -webkit-transition: height 0.35s ease;
   -o-transition: height 0.35s ease;
   transition: height 0.35s ease; }
@@ -2619,7 +2619,7 @@ input[type="button"].btn-block {
 .dropdown-divider {
   height: 0;
   margin: 0.5rem 0;
-  overflow: hidden;
+  
   border-top: 1px solid #e9ecef; }
 
 .dropdown-item {
@@ -4122,7 +4122,7 @@ input[type="button"].btn-block {
   display: -ms-flexbox;
   display: flex;
   height: 1rem;
-  overflow: hidden;
+ 
   font-size: 0.75rem;
   background-color: #e9ecef;
   border-radius: 0.25rem; }
@@ -4344,7 +4344,7 @@ button.close {
   -webkit-appearance: none; }
 
 .modal-open {
-  overflow: hidden; }
+   }
 
 .modal {
   position: fixed;
@@ -4354,10 +4354,10 @@ button.close {
   left: 0;
   z-index: 1050;
   display: none;
-  overflow: hidden;
+  
   outline: 0; }
   .modal-open .modal {
-    overflow-x: hidden;
+    
     overflow-y: auto; }
 
 .modal-dialog {
@@ -4717,7 +4717,7 @@ button.close {
 .carousel-inner {
   position: relative;
   width: 100%;
-  overflow: hidden; }
+  ; }
 
 .carousel-item {
   position: relative;
@@ -5253,7 +5253,7 @@ button.bg-dark:focus {
   display: block;
   width: 100%;
   padding: 0;
-  overflow: hidden; }
+   }
   .embed-responsive::before {
     display: block;
     content: ""; }
@@ -6017,7 +6017,7 @@ button.bg-dark:focus {
   width: 1px;
   height: 1px;
   padding: 0;
-  overflow: hidden;
+  
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0; }
@@ -7075,7 +7075,7 @@ button.bg-dark:focus {
   white-space: nowrap !important; }
 
 .text-truncate {
-  overflow: hidden;
+  
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   white-space: nowrap; }
