@@ -178,7 +178,7 @@ img {
   border-style: none; }
 
 svg:not(:root) {
-  }
+  overflow: hidden; }
 
 table {
   border-collapse: collapse; }
@@ -2477,7 +2477,7 @@ input[type="button"].btn-block {
 .collapsing {
   position: relative;
   height: 0;
-  
+  overflow: hidden;
   -webkit-transition: height 0.35s ease;
   -o-transition: height 0.35s ease;
   transition: height 0.35s ease; }
@@ -2619,7 +2619,7 @@ input[type="button"].btn-block {
 .dropdown-divider {
   height: 0;
   margin: 0.5rem 0;
-  
+  overflow: hidden;
   border-top: 1px solid #e9ecef; }
 
 .dropdown-item {
@@ -4122,7 +4122,7 @@ input[type="button"].btn-block {
   display: -ms-flexbox;
   display: flex;
   height: 1rem;
- 
+  overflow: hidden;
   font-size: 0.75rem;
   background-color: #e9ecef;
   border-radius: 0.25rem; }
@@ -4344,19 +4344,20 @@ button.close {
   -webkit-appearance: none; }
 
 .modal-open {
-   }
+  overflow: hidden; }
 
 .modal {
-  position: ;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 1050;
   display: none;
-  
+  overflow: hidden;
   outline: 0; }
   .modal-open .modal {
-    
+    overflow-x: hidden;
     overflow-y: auto; }
 
 .modal-dialog {
@@ -4410,11 +4411,12 @@ button.close {
   outline: 0; }
 
 .modal-backdrop {
-  
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 1040;
   background-color: #000; }
   .modal-backdrop.fade {
     opacity: 0; }
@@ -4489,6 +4491,7 @@ button.close {
 
 .tooltip {
   position: absolute;
+  z-index: 1070;
   display: block;
   margin: 0;
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -4573,6 +4576,7 @@ button.close {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1060;
   display: block;
   max-width: 276px;
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -4713,7 +4717,7 @@ button.close {
 .carousel-inner {
   position: relative;
   width: 100%;
-  ; }
+  overflow: hidden; }
 
 .carousel-item {
   position: relative;
@@ -4866,6 +4870,7 @@ button.close {
   right: 0;
   bottom: 10px;
   left: 0;
+  z-index: 15;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4911,6 +4916,7 @@ button.close {
   right: 15%;
   bottom: 20px;
   left: 15%;
+  z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
@@ -5247,7 +5253,7 @@ button.bg-dark:focus {
   display: block;
   width: 100%;
   padding: 0;
-   }
+  overflow: hidden; }
   .embed-responsive::before {
     display: block;
     content: ""; }
@@ -6011,7 +6017,7 @@ button.bg-dark:focus {
   width: 1px;
   height: 1px;
   padding: 0;
-  
+  overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0; }
@@ -7069,7 +7075,7 @@ button.bg-dark:focus {
   white-space: nowrap !important; }
 
 .text-truncate {
-  
+  overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   white-space: nowrap; }
@@ -7271,7 +7277,7 @@ body {
   background: url(../images/bg_4.jpg) no-repeat fixed;
   background-size: cover; }
   body.menu-show {
-    overflow:;
+    overflow: hidden;
     position: fixed;
     height: 100%;
     width: 100%; }
@@ -7556,18 +7562,16 @@ h1, h2, h3, h4, h5,
   .owl-carousel:hover .owl-nav .owl-next {
     right: -25px; }
   .owl-carousel.home-slider {
-    -webkit-overflow-scrolling: touch;
-    position: relativez;
+    position: relative;
     height: 750px;
-     }
+    z-index: 0; }
     .owl-carousel.home-slider .slider-item {
-      -webkit-overflow-scrolling: touch;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
       height: 750px;
       position: relative;
-      }
+      z-index: 0; }
       @media (max-width: 1199.98px) {
         .owl-carousel.home-slider .slider-item {
           background-position: center center !important; } }
@@ -7642,7 +7646,6 @@ h1, h2, h3, h4, h5,
     .owl-carousel.home-slider:hover .owl-nav .owl-next {
       right: 20px; }
     .owl-carousel.home-slider .owl-dots {
-      -webkit-overflow-scrolling: touch;
       position: absolute;
       left: 0;
       right: 0;
@@ -7686,7 +7689,7 @@ h1, h2, h3, h4, h5,
 .owl-custom-nav {
   float: right;
   position: relative;
-  }
+  z-index: 10; }
   .owl-custom-nav .owl-custom-prev,
   .owl-custom-nav .owl-custom-next {
     padding: 10px;
@@ -8866,7 +8869,7 @@ textarea.form-control {
         margin-bottom: 5px; } }
 
 .block-20 {
-  
+  overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -8876,7 +8879,7 @@ textarea.form-control {
   height: 270px; }
 
 .blog-entry {
-  }
+  overflow: hidden; }
   @media (min-width: 768px) {
     .blog-entry {
       margin-bottom: 30px; } }
