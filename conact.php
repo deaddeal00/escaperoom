@@ -1,14 +1,16 @@
 <?php
-//get data from form  
+if(!empty($_POST["send"])) {
+	$name = $_POST["firstName"];
+	$name2 = $_POST["secondname"];
+	$date = $_POST["date"];
+	$time = $_POST["time"];
 
-$name = $_POST['name'];
-$date= $_POST['date'];
-$message= $_POST['message'];
-$to = "sreejithn875@mail.com";
-$subject = "Mail From website";
-$txt ="Name = ". $name . "\r\n  date = " . $date . "\r\n Message =" . $message;
-$headers = "From: sreejiththottuvazhiyil@gmail.com" . "\r\n" .
-"CC: somebodyelse@example.com";
-if($email!=NULL){
-    mail($to,$subject,$txt,$headers);
+	$toEmail = "sreejithn875@pgmail.com";
+	$mailHeaders = "From: " . $name . "<". $name2 .">\r\n";
+	if(mail($toEmail, $date, $time, $mailHeaders)) {
+	    $message = "Your contact information is received successfully.";
+	    $type = "success";
+	}
 }
+require_once "contact-view.php";
+?>
